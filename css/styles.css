@@ -472,12 +472,10 @@ address {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-logo-container {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -489,7 +487,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
-  display: inline-block;
+  display: block;
+  text-align: center;
 }
 .footer-logo-studio {
   color: #f4f4fd;
@@ -505,12 +504,14 @@ address {
 }
 
 .footer-social-wrapper {
-  margin-right: 80px;
+  /* margin-right: 80px; */
+  margin-bottom: 72px;
 }
 .footer-social-paragraph {
   color: #fff;
   font-weight: 500;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-social-list {
   display: flex;
@@ -552,14 +553,18 @@ address {
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em; /* 0.32px/16 */
-
+  text-align: center;
   margin-bottom: 16px;
 }
 .footer-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
+}
+
+.footer-label {
 }
 
 .subscribe-input {
@@ -569,6 +574,7 @@ address {
   padding-left: 16px;
   min-width: 264px;
   height: 40px;
+  width: 288px;
 
   color: #ffffff;
   font-size: 12px;
@@ -577,7 +583,7 @@ address {
 
   border-radius: 4px;
   border: 1px solid #ffffff;
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -589,7 +595,6 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 16px; */
   padding: 8px 24px;
   border-radius: 4px;
   border: none;
@@ -876,8 +881,33 @@ address {
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
-}
 
+  .footer-container {
+    display: flex;
+    display: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo-container {
+    margin-right: 24px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-subscribe-text {
+    text-align: left;
+  }
+
+  .subscribe-input {
+    width: unset;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1158px;
@@ -939,5 +969,14 @@ address {
 
   .portfolio-item {
     width: calc((100% - 48px) / 3);
+  }
+
+  .footer-logo-container {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .footer-social-wrapper {
+    margin-right: 80px;
   }
 }
