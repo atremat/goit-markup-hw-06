@@ -66,10 +66,11 @@ address {
 }
 
 .container {
-  width: 320px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   /* outline: 2px solid red; */
 }
 
@@ -220,7 +221,6 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* padding: 188px 0; */
   padding: 72px 0;
   max-width: 320px;
   margin: 0 auto;
@@ -319,9 +319,14 @@ address {
   background-color: #f4f4fd;
 }
 
+.team > .container {
+  max-width: 296px;
+}
+
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .team-item {
@@ -831,12 +836,13 @@ address {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 
   .hero {
     padding: 112px 0;
     max-width: 768px;
+    padding: 188px 0;
   }
 
   .hero-title {
@@ -852,11 +858,21 @@ address {
   .features-item {
     width: calc((100% - 24px) / 2);
   }
+
+  .team > .container {
+    max-width: 584px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -898,5 +914,13 @@ address {
 
   .features-paragraph {
     font-weight: 400;
+  }
+
+  .team > .container {
+    max-width: 1158px;
+  }
+
+  .team-list {
+    gap: 24px;
   }
 }
