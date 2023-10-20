@@ -121,7 +121,9 @@ address {
 .header-nav {
   display: flex;
   align-items: center;
+
   margin-right: auto;
+  /* justify-content: space-between; */
 }
 
 .header-logo {
@@ -132,7 +134,7 @@ address {
   color: #4d5ae5;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  margin-right: 120px;
 }
 
 .header-logo-studio {
@@ -140,8 +142,7 @@ address {
 }
 
 .header-menu-list {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
 .header-menu-item {
 }
@@ -181,9 +182,7 @@ address {
 }
 
 .header-address-list {
-  display: flex;
-  gap: 40px;
-  padding: 24px 0;
+  display: none;
 }
 
 .header-address-link {
@@ -222,7 +221,7 @@ address {
   background-position: center;
   background-size: cover;
   padding: 72px 0;
-  max-width: 320px;
+  /* max-width: 320px; */
   margin: 0 auto;
 }
 
@@ -853,9 +852,25 @@ address {
     max-width: 768px;
   }
 
+  .header-menu-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .header-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .hero {
     padding: 112px 0;
-    max-width: 768px;
+    /* max-width: 768px; */
     padding: 188px 0;
   }
 
@@ -925,8 +940,18 @@ address {
     padding-right: 15px;
   }
 
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .header-address-list {
+    flex-direction: row;
+    gap: 40px;
+    padding: 24px 0;
+  }
+
   .hero {
-    max-width: 1440px;
+    /* max-width: 1440px; */
   }
 
   .hero-title {
