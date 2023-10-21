@@ -58,11 +58,100 @@
           </ul>
         </address>
 
-        <button type="button" class="menu-open-btn">
+        <button type="button" class="menu-open-btn" data-menu-open>
           <svg class="menu-opem-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button class="menu-close-btn" type="button" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="mob-address-list">
+            <li class="mob-address-item">
+              <a href="tel:+110001111111" class="mob-address-link-tel">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+
+            <li class="mob-address-item">
+              <a href="mailto:info@devstudio.com" class="mob-address-link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                aria-label="twitter"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -736,6 +825,7 @@
       </div>
     </div>
 
+    <script src="./js/modal-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
