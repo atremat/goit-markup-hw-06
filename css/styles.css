@@ -1010,7 +1010,7 @@ address {
   .hero {
     padding: 112px 0;
     max-width: 768px;
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1137,7 +1137,7 @@ address {
 
   .hero {
     max-width: 1440px;
-
+    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
